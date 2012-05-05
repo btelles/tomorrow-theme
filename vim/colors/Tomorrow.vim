@@ -4,14 +4,14 @@
 " Hex colour conversion functions borrowed from the theme "Desert256""
 
 " Default GUI Colours
-let s:foreground = "4d4d4c"
-let s:background = "fafafafa"
+let s:foreground = "3e3e3d"
+let s:background = "faf8ed"
 let s:selection = "d6d6d6"
 let s:line = "efefef"
-let s:comment = "8e908c"
+let s:comment = "595959"
 let s:red = "c82829"
-let s:orange = "f5871f"
-let s:yellow = "eab700"
+let s:orange = "ca6f1a"
+let s:yellow = "be9500"
 let s:green = "718c00"
 let s:aqua = "3e999f"
 let s:blue = "4271ae"
@@ -300,7 +300,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 
 	" Ruby Highlighting
 	call <SID>X("rubySymbol", s:green, "", "")
-	call <SID>X("rubyConstant", s:yellow, "", "")
+	call <SID>X("rubyConstant", s:yellow, "", "bold")
 	call <SID>X("rubyAttribute", s:blue, "", "")
 	call <SID>X("rubyInclude", s:blue, "", "")
 	call <SID>X("rubyLocalVariableOrMethod", s:orange, "", "")
